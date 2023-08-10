@@ -1,0 +1,11 @@
+.login__content{
+    min-height: 600px;
+}
+.content--right .login__title{
+    top:-4%;
+}
+@media(min-width:768px){
+    .login__content{
+        width: 50%;
+    }
+}

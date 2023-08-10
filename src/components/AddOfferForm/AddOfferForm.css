@@ -1,0 +1,61 @@
+.addOffer__content{
+    min-height: 700px;
+}
+
+.addOffer__content .addOffer__title{
+    top:-3%; 
+}
+.addOffer__lists{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    gap: 30px;
+    flex-direction: column;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+  border: 1px solid var(--grey-color); 
+  color: var(--black-color);
+  border-radius: 4px; 
+  color: var(--black-color); 
+  font-size: 1.5rem; 
+}
+.addOffer__images{
+    position: relative;
+}
+.addOffer__images--info{
+    position: flex;
+    display: inline;
+}
+.addOffer__images--info p{
+    margin-top: 5rem;
+    margin-left: 1rem;
+    color: var(--grey-color);
+}
+.addOffer__images--content{
+    width: 80px;
+    height: 80px;
+    background-color: var(--grey-color);
+    position: relative;
+}
+.input__click{
+    opacity: 0; 
+    position: absolute; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+}
+
+
+@media(min-width:768px){
+    .addOffer__content{
+        width: 70%;
+    }
+   .addOffer__btn{
+    width: 40%;
+   }
+    textarea{
+        width: 40%;
+    }
+}

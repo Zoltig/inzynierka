@@ -1,0 +1,58 @@
+    .register__content{
+        min-height: 1200px;
+    }
+    .content--right .register__title{
+        top:-2%;
+    }
+    .register__radiobuttons{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        gap:150px
+    }
+    .register__form--condition{
+        flex-direction: column;
+    }
+    .register__form--pesel,
+    .register__form--document{
+        flex-direction: column;
+    }
+    .register__form--pesel{
+        order: 1;
+    }
+    .register__form--document{
+        order: 2;
+    }
+    .register__form--pesel.switch{
+        order: 2;
+    }
+    .register__form--document.switch{
+        order: 1;
+    }
+    .register__radiobutton{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--black-color);
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .register__radiobutton:checked::before {
+        content: "x"; 
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px; 
+        color: var(--dark-color);
+    }
+    @media(min-width:768px){
+        .register__content{
+            width: 50%;
+        }
+
+    }
